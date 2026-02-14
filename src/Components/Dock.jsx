@@ -8,49 +8,49 @@ const Dock = ({windowstate, setWindowState}) => {
       <div 
       onClick={()=>{setWindowState(state=>({...state, github:true}))}}
       className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center px-2 aspect-square rounded-sm bg-black cursor-pointer w-11">
-        <img src="/public/icons/github.svg" alt="" />
+        <img src="/icons/github.svg" alt="" />
       </div>
 
       <div
       onClick={()=>{window.open('https://calendar.google.com/calendar/u/0/r', '_blank')}}
        className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center p-2 aspect-square rounded-sm bg-linear-to-b from-purple-600 to-purple-500 cursor-pointer w-11">
-        <img src="/public/icons/calender.svg" alt="" />
+        <img src="/icons/calender.svg" alt="" />
       </div>
 
       <div 
       onClick={()=>{setWindowState(state=>({...state, cli:true}))}}
       className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center p-2 aspect-square rounded-sm bg-black cursor-pointer w-11">
-        <img src="/public/icons/cli.svg" alt="" />
+        <img src="/icons/cli.svg" alt="" />
       </div>
 
       <div
       onClick={()=>{setWindowState(state=>({...state, note:true}))}}
        className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center p-2 aspect-square rounded-sm bg-linear-to-b from-orange-600 to-orange-500 cursor-pointer w-11">
-        <img src="/public/icons/note.svg" alt="" />
+        <img src="/icons/note.svg" alt="" />
       </div>
 
       <div
       onClick={()=>{window.open('mailto:sohamghadai28@gmail.com', '_blank')}}
        className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center p-2 aspect-square rounded-sm bg-linear-to-b from-yellow-500 to-yellow-400 cursor-pointer w-11">
-        <img src="/public/icons/mail.svg" alt="" />
+        <img src="/icons/mail.svg" alt="" />
       </div>
 
       <div
       onClick={()=>{setWindowState(state=>({...state, spotify:true}))}}
        className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center p-2 aspect-square rounded-sm bg-linear-to-b from-green-600 to-green-500 cursor-pointer w-11">
-        <img src="/public/icons/spotify.svg" alt="" />
+        <img src="/icons/spotify.svg" alt="" />
       </div>
 
       <div 
       onClick={()=>{setWindowState(state=>({...state, resume:true}))}}
       className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center p-2 aspect-square rounded-sm bg-linear-to-b from-red-600 to-red-500 cursor-pointer w-11">
-        <img src="/public/icons/pdf.svg" alt="" />
+        <img src="/icons/pdf.svg" alt="" />
       </div>
 
       <div
       onClick={()=>{window.open('https://www.linkedin.com/in/soham-ghadai-55642035a/', '_blank')}}
        className="icon flex items-center hover:scale-[1.25] hover:translate-y-[-20%] justify-center p-2 aspect-square rounded-sm bg-linear-to-b from-purple-600 to-purple-500 cursor-pointer w-11">
-        <img src="/public/icons/link.svg" alt="" />
+        <img src="/icons/link.svg" alt="" />
       </div>
       
     </footer>

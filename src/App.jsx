@@ -20,7 +20,7 @@ function App() {
 
   return (
     <>
-    <main className='h-full w-full bg-[url("./public/bg.avif")] bg-no-repeat bg-center bg-cover'>
+    <main className='h-full w-full bg-[url("/bg.avif")] bg-no-repeat bg-center bg-cover'>
       <Dock windowState={windowState} setWindowState={setWindowState}/>
       <Nav/>
       {windowState.github && <Github windowName='github' windowState={windowState} setWindowState={setWindowState}/>}
