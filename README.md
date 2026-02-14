@@ -1,16 +1,88 @@
-# React + Vite
+# 🍎 macOS Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive macOS-inspired portfolio website with a fully functional desktop environment in your browser.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Window Management** - Drag, resize, close
+- **Terminal (CLI)** - Functional command-line interface (type `help` for commands)
+- **Notes** - Demo skills and about information
+- **Spotify** - Integrated music player
+- **Resume** - Interactive resume viewer
+- **Calendar** - Google Calendar integration
+- **Link** - Direct linkedin profile link
+- **Mail** - Contact form with email redirect
+- **GitHub** - Project showcase with cards
 
-## React Compiler
+## 🚀 Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git clone https://github.com/sohamghadai42/MAC-OS.git
+cd MAC-OS
+```
 
-## Expanding the ESLint configuration
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Start development server
+npm start
+
+# Build for production
+npm run build
+The app will open at `http://localhost:5173`
+
+## 🛠️ Tech Stack
+
+- **React** - UI library
+- **CSS3** - Styling and animations
+- **JavaScript (ES6+)** - Core functionality
+
+## 📂 Project Structure
+
+├── 📁 public/
+│   ├── 📁 icons/
+│   │   ├── 🖼️ apple.svg
+│   │   ├── 🖼️ calender.svg
+│   │   ├── 🖼️ cli.svg
+│   │   ├── 🖼️ github.svg
+│   │   ├── 🖼️ link.svg
+│   │   ├── 🖼️ mail.svg
+│   │   ├── 🖼️ note.svg
+│   │   ├── 🖼️ pdf.svg
+│   │   ├── 🖼️ spotify.svg
+│   │   └── 🖼️ wifi.svg
+│   ├── 📄 bg.avif
+│   ├── 📄 note.txt
+│   └── 📕 resume.pdf
+├── 📁 src/
+│   ├── 📁 Components/
+│   │   ├── 📁 Windows/
+│   │   │   ├── 📄 Cli.jsx
+│   │   │   ├── 📄 Github.jsx
+│   │   │   ├── 📄 MacWindows.jsx
+│   │   │   ├── 📄 Note.jsx
+│   │   │   ├── 📄 Resume.jsx
+│   │   │   └── 📄 Spotify.jsx
+│   │   ├── 📄 DateTime.jsx
+│   │   ├── 📄 Dock.jsx
+│   │   └── 📄 Nav.jsx
+│   ├── 📁 assets/
+│   │   └── ⚙️ github.json
+│   ├── 📄 App.jsx
+│   ├── 🎨 index.css
+│   └── 📄 main.jsx
+├── ⚙️ .gitignore
+├── 📝 README.md
+├── 📄 eslint.config.js
+├── 🌐 index.html
+├── ⚙️ package-lock.json
+├── ⚙️ package.json
+└── 📄 vite.config.js
+
+## 🎨 Future Implementation
+
+Replace demo data with my own data:
+- Update `src/data/notes.jsx` for Notes content
+- Modify `src/data/projects.js` for GitHub projects
+- Change Spotify embed code in `src/components/Apps/Spotify.js`
+- Update resume PDF in `public/assets/`
