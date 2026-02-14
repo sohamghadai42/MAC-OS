@@ -39,50 +39,40 @@ The app will open at `http://localhost:5173`
 
 ## 📂 Project Structure
 
-├── 📁 public/
-│   ├── 📁 icons/
-│   │   ├── 🖼️ apple.svg
-│   │   ├── 🖼️ calender.svg
-│   │   ├── 🖼️ cli.svg
-│   │   ├── 🖼️ github.svg
-│   │   ├── 🖼️ link.svg
-│   │   ├── 🖼️ mail.svg
-│   │   ├── 🖼️ note.svg
-│   │   ├── 🖼️ pdf.svg
-│   │   ├── 🖼️ spotify.svg
-│   │   └── 🖼️ wifi.svg
-│   ├── 📄 bg.avif
-│   ├── 📄 note.txt
-│   └── 📕 resume.pdf
-├── 📁 src/
-│   ├── 📁 Components/
-│   │   ├── 📁 Windows/
-│   │   │   ├── 📄 Cli.jsx
-│   │   │   ├── 📄 Github.jsx
-│   │   │   ├── 📄 MacWindows.jsx
-│   │   │   ├── 📄 Note.jsx
-│   │   │   ├── 📄 Resume.jsx
-│   │   │   └── 📄 Spotify.jsx
-│   │   ├── 📄 DateTime.jsx
-│   │   ├── 📄 Dock.jsx
-│   │   └── 📄 Nav.jsx
-│   ├── 📁 assets/
-│   │   └── ⚙️ github.json
-│   ├── 📄 App.jsx
-│   ├── 🎨 index.css
-│   └── 📄 main.jsx
-├── ⚙️ .gitignore
-├── 📝 README.md
-├── 📄 eslint.config.js
-├── 🌐 index.html
-├── ⚙️ package-lock.json
-├── ⚙️ package.json
-└── 📄 vite.config.js
+```
+macos-portfolio/
+├── public/
+│   ├── icons/              # App icons (SVG)
+│   ├── bg.avif             # Desktop background
+│   ├── note.txt            # Notes content
+│   └── resume.pdf          # Resume file
+├── src/
+│   ├── Components/
+│   │   ├── Windows/
+│   │   │   ├── Cli.jsx           # Terminal component
+│   │   │   ├── Github.jsx        # GitHub projects
+│   │   │   ├── MacWindows.jsx    # Window manager
+│   │   │   ├── Note.jsx          # Notes app
+│   │   │   ├── Resume.jsx        # Resume viewer
+│   │   │   └── Spotify.jsx       # Spotify player
+│   │   ├── DateTime.jsx    # Menu bar clock
+│   │   ├── Dock.jsx        # Bottom dock
+│   │   └── Nav.jsx         # Top menu bar
+│   ├── assets/
+│   │   └── github.json     # GitHub projects data
+│   ├── App.jsx             # Main app component
+│   ├── main.jsx            # Entry point
+│   └── index.css           # Global styles
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
 ## 🎨 Future Implementation
 
 Replace demo data with my own data:
 - Update `src/data/notes.jsx` for Notes content
-- Modify `src/data/projects.js` for GitHub projects
-- Change Spotify embed code in `src/components/Apps/Spotify.js`
-- Update resume PDF in `public/assets/`
+- Modify `src/data/projects.jsx` for GitHub projects
+- Change Spotify embed code in `src/components/Apps/Spotify.jsx`
+- Update resume PDF in `public/assets/resume.pdf`
