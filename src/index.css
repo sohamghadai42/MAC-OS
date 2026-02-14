@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.icon{
+  transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.icon:hover + .icon,
+.icon:has(+.icon:hover){
+  transform: scale(1.05) translateY(-8%);
+
+}
+pre{
+  background: transparent !important;
+}
+*::-webkit-scrollbar{
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb{
+  background: gray;
+  border-radius: 4px;
+}
